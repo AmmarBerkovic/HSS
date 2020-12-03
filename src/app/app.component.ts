@@ -9,5 +9,4 @@ import { webpage } from 'src/webpage-data';
 export class AppComponent {
       title = webpage.title;
       description = webpage.description;
-
 }

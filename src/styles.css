@@ -1,9 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
 html{
     min-height: 100%;
-    background:rgb(2,0,36,1);
-    background: radial-gradient(circle, rgba(2,0,36,1) 13%, rgba(9,58,121,1) 58%) fixed;
+    background:rgb(0,46,253);
+    background: radial-gradient(circle, rgba(0,46,253,1) 18%, rgba(2,14,65,1) 62%) fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.btns{
+    max-width: 100%;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+button{
+    display: inline-block;
+    background-color:transparent;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 10px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    color: whitesmoke;
+    font-size: 30px;
+    border: 2px solid whitesmoke;
+}
+
+button:hover{
+    background-color: whitesmoke;
+    color: black;
 }

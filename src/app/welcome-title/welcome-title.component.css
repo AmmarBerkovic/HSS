@@ -4,7 +4,7 @@
     padding: 5px;
     text-align: center;
     color: whitesmoke;
-    font-family: 'Asar';
+    font-family: 'Amaranth';
     font-size: 35px;
     animation: mymove 2s;
 }
@@ -12,3 +12,5 @@
 @keyframes mymove{
     50% {font-size: 50px}
 }
+
+
