@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SignButtonComponent } from './sign-button.component';
+import { FnameLnameomponent } from './fname-lname.component';
 
-describe('SignButtonComponent', () => {
-  let component: SignButtonComponent;
-  let fixture: ComponentFixture<SignButtonComponent>;
+describe('FnameLnameComponent', () => {
+  let component: FnameLnameomponent;
+  let fixture: ComponentFixture<FnameLnameComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SignButtonComponent ]
+      declarations: [ FnameLnameComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SignButtonComponent);
+    fixture = TestBed.createComponent(FnameLnameComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "hs-app"
+  "defaultProject": "hs-app",
+  "cli": {
+    "analytics": "f2bfd57b-b3d5-4ec7-b900-58326d090455"
+  }
 }

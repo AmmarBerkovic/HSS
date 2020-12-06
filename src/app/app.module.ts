@@ -3,14 +3,17 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SignButtonComponent } from './sign-button/sign-button.component';
+import { FnameLnameComponent } from './fname-lname/fname-lname.component';
 import { EmailfieldsComponent } from './emailfields/emailfields.component';
+import { ButtonsComponent } from './buttons/buttons.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    SignButtonComponent,
-    EmailfieldsComponent
+    FnameLnameComponent,
+    EmailfieldsComponent,
+    ButtonsComponent
   ],
   imports: [
     BrowserModule,
