@@ -1,11 +1,11 @@
 .welcome-title{
     max-width: 100%;
     margin: auto;
-    padding: 5px;
+    padding-top: 50px;
     text-align: center;
-    color: whitesmoke;
+    color: black;
     font-family: 'Amaranth';
-    font-size: 35px;
+    font-size: 40px;
     animation: mymove 2s;
 }
 

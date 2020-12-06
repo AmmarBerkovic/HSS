@@ -1,13 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 html{
     min-height: 100%;
-    background:rgb(0,46,253);
-    background: radial-gradient(circle, rgba(0,46,253,1) 18%, rgba(2,14,65,1) 62%) fixed;
+    background: radial-gradient(circle, rgba(109,121,147) 45%, rgba(150,133,143,1) 66%);
     background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
+.page-logo{
+    align-content: center;
+    display: block;
+    margin: auto;
+    max-width: 20%;
+    max-height: 20%;
+}
 .btns{
     max-width: 100%;
     margin: auto;
@@ -18,18 +24,18 @@ html{
 
 button{
     display: inline-block;
-    background-color:transparent;
+    background-color: transparent;
     text-align: center;
     padding: 10px;
-    margin: 10px 10px;
+    margin: 20px 20px;
     transition-duration: 0.5s;
     cursor: pointer;
-    color: whitesmoke;
+    color:black;
     font-size: 30px;
-    border: 2px solid whitesmoke;
+    border: 2px solid black;
 }
 
 button:hover{
-    background-color: whitesmoke;
+    background-color: #d5d5d5;
     color: black;
 }
