@@ -1,0 +1,80 @@
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: solid grey;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: solid grey;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px #6d7993;
+  margin-bottom: 25px;
+}
+
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+  
+}
+.button {
+
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 20px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+   
+  }
+  .button1{
+    background-color:#96858f; 
+     transform: translateX(820%); 
+  }
+  .button2{
+    
+    background-color: #d5d5d5; 
+    transform: translateX(465%);
+ }
+ .button2:hover{
+   color: #d5d5d5;
+  background-color: #96858f; 
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+  
+  .button1:hover {
+    color: #d5d5d5;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  .center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid black;
+    padding: 10px;
+  }
+
+  

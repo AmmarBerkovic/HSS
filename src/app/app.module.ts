@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { FnameLnameComponent } from './fname-lname/fname-lname.component';
 import { EmailfieldsComponent } from './emailfields/emailfields.component';
 import { ButtonsComponent } from './buttons/buttons.component';
+import { FormboxComponent } from './formbox/formbox.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { ButtonsComponent } from './buttons/buttons.component';
     AppComponent,
     FnameLnameComponent,
     EmailfieldsComponent,
-    ButtonsComponent
+    ButtonsComponent,
+    FormboxComponent
   ],
   imports: [
     BrowserModule,
