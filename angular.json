@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "loginform-app"
+  "defaultProject": "loginform-app",
+  "cli": {
+    "analytics": "e4b83e35-a142-4d6c-9e38-1715ec6e785e"
+  }
 }
