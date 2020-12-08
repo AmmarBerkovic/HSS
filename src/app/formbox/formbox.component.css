@@ -3,6 +3,7 @@
 /* Add padding to containers */
 .container {
   padding: 16px;
+  margin-top: 40px;
 }
 
 /* Full-width input fields */
@@ -24,6 +25,7 @@ input[type=text]:focus, input[type=password]:focus {
 hr {
   border: 1px #141414;
   margin-bottom: 25px;
+  
 }
 
 
@@ -49,16 +51,17 @@ a {
     cursor: pointer;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
+
    
   }
   .button1{
     background-color:#8aaff5; 
-     transform: translateX(150%); 
+     transform: translateX(240%); 
   }
   .button2{
     
     background-color: #8aaff5; 
-    transform: translateX(150%);
+    transform: translateX(270%);
  }
  .button2:hover{
    color: #d5d5d5;
@@ -71,8 +74,11 @@ a {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   }
   .center {
-    margin: auto;
-    width: 60%;
+    margin-top: 100px;
+    margin-bottom: 120px;
+    margin-right: 115px;
+    margin-left: 350px;
+    width: 50%;
     border: 3px solid black;
     padding: 10px;
   }
