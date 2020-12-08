@@ -62,12 +62,12 @@ a {
  }
  .button2:hover{
    color: #d5d5d5;
-  background-color: #dadada; 
+  background-color: #006d24; 
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
   
   .button1:hover {
-    color: #d5d5d5;
+   
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   }
   .center {
