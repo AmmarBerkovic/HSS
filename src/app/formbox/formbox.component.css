@@ -1,29 +1,41 @@
 * {box-sizing: border-box}
 
+
+
 /* Add padding to containers */
 .container {
   padding: 16px;
   margin-top: 40px;
+  background-color: #5c5c5c;
 }
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
-  width: 100%;
+  width: 90%;
   padding: 15px;
-  margin: 5px 0 22px 0;
+  margin: 5px 30px 22px ;
   display: inline-block;
-  border: 1px;
-  background: #a7a7a7;
+  border: 3px;
+  background: #fcfafa;
+  border-radius: 25px;
+  box-shadow: 3px 5px #888888;
+
+  
+  
 }
 
 input[type=text]:focus, input[type=password]:focus {
   background-color: #bbbbbb;
-  outline: none;
+  outline: 1px ;
+  
+  
 }
+
+
 
 /* Overwrite default styles of hr */
 hr {
-  border: 1px #141414;
+  border: 1px #e4dada;
   margin-bottom: 25px;
   
 }
@@ -31,13 +43,14 @@ hr {
 
 /* Add a blue text color to links */
 a {
-  color: dodgerblue;
+  color: rgb(208, 215, 221);
 }
 
 /* Set a grey background color and center the text of the "sign in" section */
 .signin {
   background-color: #949393;
   text-align: center;
+  
   
 }
 .button {
@@ -55,16 +68,25 @@ a {
    
   }
   .button1{
-    background-color:#8aaff5; 
-     transform: translateX(240%); 
+    background-color:#e9ebf1; 
+     transform: translateX(80%);
+     border-radius: 25px;
+     
+  
+     
+
+
   }
   .button2{
     
-    background-color: #8aaff5; 
-    transform: translateX(270%);
+    background-color:#f5f5f5; 
+    transform: translateX(100%);
+    border-radius: 25px;
+    
+  
  }
  .button2:hover{
-   color: #d5d5d5;
+   color: #646464;
   background-color: #006d24; 
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
@@ -79,10 +101,30 @@ a {
     margin-right: 115px;
     margin-left: 350px;
     width: 50%;
-    border: 3px solid black;
+    border: 3px #949393;
     padding: 10px;
+    background-color:#d5d5d5;
+    border-radius: 25px;
+    box-shadow: 5px 10px #888888;
+    background-image: linear-gradient(rgb(83, 150, 238), rgb(36, 68, 109));
+    
+  
   }
 
   h1 {text-align: center;}
+
+
+    
+
+  
+
+
+  
+
+ 
+ 
+
+
+
 
   
