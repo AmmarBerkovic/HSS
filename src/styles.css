@@ -1,41 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
 html{
     min-height: 100%;
-    background: radial-gradient(circle, rgba(109,121,147) 45%, rgba(150,133,143,1) 66%);
+    background-image: url("src/assets/background-image-books.jpg");
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
-.page-logo{
-    align-content: center;
-    display: block;
-    margin: auto;
-    max-width: 20%;
-    max-height: 20%;
-}
-.btns{
-    max-width: 100%;
-    margin: auto;
-    padding: 5px;
-    text-align: center;
-    padding: 10px;
+.grid-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-gap: 20px;
 }
 
-button{
+.btns{
+    max-width: 100%;
+    margin-top: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;    
+}
+
+.btn{
     display: inline-block;
-    background-color: transparent;
+    background-color: #6d7993;
     text-align: center;
     padding: 10px;
-    margin: 20px 20px;
+    margin: 20px;
+    width: 60%;
     transition-duration: 0.5s;
     cursor: pointer;
     color:black;
     font-size: 30px;
     border: 2px solid black;
+    border-radius: 12px;
 }
 
 button:hover{
     background-color: #d5d5d5;
     color: black;
+}
+
+.footer{
+    position: fixed;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.logo-image{
+    display: block;
+    margin: auto;
+    max-width: 30%;
+    max-height: 30%;
 }

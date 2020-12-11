@@ -3,15 +3,17 @@
   <body>
       <welcome-title [title]=title></welcome-title>
 
-      <img class="page-logo" src="/assets/HS-Library-LOGO.png">
+      <div class="grid-container">
+        <description [description]=description></description>
+        <div class="btns">
+          <button type="button" class="btn"> SIGN IN </button>
+          <button type="button" class="btn"> SIGN UP </button>
+        </div>
+      </div>
 
-      <description [description]=description></description>
-
-      <div class="btns">
-       <button type="button" class="btn">Sign in</button>
-       <button type="button" class="btn">Sign up</button>
-      </div>   
-      
+      <div class="footer">
+        <img class="logo-image" src="./assets/HS-logo.png">
+      </div>
   </body>
 </html>
 
