@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html>
+<router-outlet *ngIf="isRegForm()"></router-outlet>
+<html  *ngIf="isHomeRoute()">
   <body>
       <welcome-title [title]=title></welcome-title>
 
       <div class="grid-container">
         <description [description]=description></description>
         <div class="btns">
-          <button type="button" class="btn"> SIGN IN </button>
-          <button type="button" class="btn"> SIGN UP </button>
+          <input type="button" class="btn" value="SIGN IN" />
+          <input type="button" class="btn" value="SIGN UP" (click)="onSignUpClicked()" />
         </div>
       </div>
+
 
       <div class="footer">
         <img class="logo-image" src="./assets/HS-logo.png">

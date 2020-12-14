@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-html{
+body{
     min-height: 100%;
     background-image: url("src/assets/background-image-books.jpg");
     background-position: center;
@@ -36,7 +36,7 @@ html{
     border-radius: 12px;
 }
 
-button:hover{
+.btn:hover{
     background-color: #d5d5d5;
     color: black;
 }
