@@ -6,6 +6,8 @@
     padding: 0;
     
     box-sizing: border-box;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
     }
     
@@ -15,7 +17,7 @@ body {
     
     background-size: cover;
     
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     color: white;
     
@@ -52,7 +54,6 @@ body {
     
     color: rgb(10, 5, 5);
     
-    
     }
     
 .form::before {
@@ -68,8 +69,6 @@ body {
     width: 50%;
     
     height: 100%;
-    
-
     
     transform: skewX(-26deg);
     
@@ -90,8 +89,6 @@ body {
     left: calc(50% - 50px);
     
     width: 100px;
-    
-  
     
     border-radius: 50%;
     
