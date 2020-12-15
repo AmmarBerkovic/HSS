@@ -1,56 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
 body{
     min-height: 100%;
+    margin: 0px;
     background-image: url("src/assets/background-image-books.jpg");
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
-.grid-container{
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr;
-    grid-gap: 20px;
-}
-
-.btns{
+.topnav{
     max-width: 100%;
-    margin-top: 40px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;    
+    overflow: hidden;  
+    background-color: #6d7993; 
+    padding: 0px 20px; 
 }
 
 .btn{
-    display: inline-block;
-    background-color: #6d7993;
+    background-color: #d5d5d5;
     text-align: center;
-    padding: 10px;
-    margin: 20px;
-    width: 60%;
+    float: right;
+    padding: 10px 20px;
+    margin: 10px;
+    width: 10%;
     transition-duration: 0.5s;
     cursor: pointer;
     color:black;
-    font-size: 30px;
+    font-size: 25px;
     border: 2px solid black;
     border-radius: 12px;
 }
 
 .btn:hover{
-    background-color: #d5d5d5;
-    color: black;
-}
-
-.footer{
-    position: fixed;
-    bottom: 40px;
-    width: 100%;
-    text-align: center;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .logo-image{
     display: block;
+    float: left;
     margin: auto;
-    max-width: 30%;
-    max-height: 30%;
+    padding-top: 10px;
+    max-width: 25%;
+    max-height: 25%;
 }

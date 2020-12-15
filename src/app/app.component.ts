@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { webpage } from 'src/webpage-data';
-import { Router } from '@angular/router'
+import { Input } from '@angular/core';
 
 
 @Component({
@@ -8,25 +8,14 @@ import { Router } from '@angular/router'
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'] })
 
-export class AppComponent implements OnInit {
+export class AppComponent{
       title = webpage.title;
       description = webpage.description;
+      logoUrl = webpage.logoUrl;
 
-      constructor(private _router: Router) { }
+      @Input()
+      src!: String;
 
-      ngOnInit(): void {} 
-
-      isHomeRoute() {
-        return this._router.url === '/';
-      }
-
-      isRegForm() {
-        return this._router.url === '/registration-form';
-      }
-      onSignUpClicked() {
-        //window.open('/registration-form', '_blank');
-        this._router.navigateByUrl('/registration-form');
-        //location.assign('/registration-form');
-      }
+      constructor() { }
 
 }
