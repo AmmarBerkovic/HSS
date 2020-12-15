@@ -15,7 +15,7 @@ body {
     
     background-size: cover;
     
-    font-family: sans-serif;
+    font-family: 'Courier New', Courier, monospace;
 
     color: white;
     
@@ -42,17 +42,16 @@ body {
     
     width: 100%;
     
-    max-width: 380px;
-    
+    max-width: 450px;
+
     padding: 80px 40px 40px;
     
-    background: rgba(3, 0, 0, 0.7);
+    background-image: linear-gradient(rgba(83,150,238),rgb(36, 68, 109)) ;
     
     border-radius: 10px;
     
     color: rgb(10, 5, 5);
     
-    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
     
     }
     
@@ -70,7 +69,7 @@ body {
     
     height: 100%;
     
-    background: rgba(231, 220, 220, 0.08);
+
     
     transform: skewX(-26deg);
     
@@ -92,7 +91,7 @@ body {
     
     width: 100px;
     
-    background: rgba(255,255,255, 0.8);
+  
     
     border-radius: 50%;
     
@@ -164,11 +163,11 @@ body {
     
 .form .input-group input:valid + label {
     
-    transform: translateY(-18px);
+    transform: translateY(-30px);
     
-    color: red;
+    color: rgb(255, 0, 0);
     
-    font-size: .8rem;
+    font-size: 1rem;
     
     }
     
@@ -182,7 +181,7 @@ body {
     
     outline: none;
     
-    background: #6d7993;
+    background: #11cf50;
 
     color: white;
     
@@ -202,7 +201,7 @@ body {
 
 .forgot-pw {
     
-    color:#001692;
+    color:rgb(23,201,255);
     
     }
     
