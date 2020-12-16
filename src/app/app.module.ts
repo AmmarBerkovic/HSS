@@ -3,8 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FnameLnameComponent } from './fname-lname/fname-lname.component';
-import { EmailfieldsComponent } from './emailfields/emailfields.component';
+import { InputfieldsComponent } from './input-fields/input-fields.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { FormboxComponent } from './formbox/formbox.component';
 import { TermsComponent } from './terms/terms.component';
@@ -13,8 +12,7 @@ import { TermsComponent } from './terms/terms.component';
 @NgModule({
   declarations: [
     AppComponent,
-    FnameLnameComponent,
-    EmailfieldsComponent,
+    InputfieldsComponent,
     ButtonsComponent,
     FormboxComponent,
     TermsComponent
