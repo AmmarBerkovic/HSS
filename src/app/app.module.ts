@@ -3,21 +3,17 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FnameLnameComponent } from './fname-lname/fname-lname.component';
-import { EmailfieldsComponent } from './emailfields/emailfields.component';
-import { ButtonsComponent } from './buttons/buttons.component';
 import { FormboxComponent } from './formbox/formbox.component';
-import { TermsComponent } from './terms/terms.component';
 
+import { LoginComponent } from './login/login.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FnameLnameComponent,
-    EmailfieldsComponent,
-    ButtonsComponent,
     FormboxComponent,
-    TermsComponent
+    LoginComponent,
+    ResetPasswordComponent,
   ],
   imports: [
     BrowserModule,
