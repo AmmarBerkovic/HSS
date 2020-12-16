@@ -5,13 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WelcomeTitleComponent } from './welcome-title/welcome-title.component';
 import { DescriptionComponent } from './description/description.component';
+import { FormboxComponent } from './formbox/formbox.component';
 
+import { LoginComponent } from './login/login.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeTitleComponent,
     DescriptionComponent,
+    FormboxComponent,
+    LoginComponent,
+    ResetPasswordComponent,
   ],
   imports: [
     BrowserModule,
