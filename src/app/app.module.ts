@@ -8,6 +8,8 @@ import { ButtonsComponent } from './buttons/buttons.component';
 import { FormboxComponent } from './formbox/formbox.component';
 import { TermsComponent } from './terms/terms.component';
 
+import { LoginComponent } from './login/login.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { TermsComponent } from './terms/terms.component';
     InputfieldsComponent,
     ButtonsComponent,
     FormboxComponent,
-    TermsComponent
+    TermsComponent,
+    LoginComponent,
+    ResetPasswordComponent,
   ],
   imports: [
     BrowserModule,

@@ -14,4 +14,8 @@ export class AppComponent {
   isLoginForm(){
     return this.router.url === '/login-form';
   }
+
+  isHomeRoute(){
+    return this.router.url === '/';
+  }
 }

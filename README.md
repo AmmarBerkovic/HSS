@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 # HsApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
+=======
+# LoginformApp
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
+>>>>>>> login-page-frontend
 
 ## Development server
 
