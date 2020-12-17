@@ -12,7 +12,10 @@ export class AppComponent {
   constructor(private router : Router){}
 
   isLoginForm(){
-    return this.router.url === '/login-form';
+    return this.router.url === '/login';
+  }
+  isForgotPassword(){
+    return this.router.url === '/forgot-password';
   }
 
   isHomeRoute(){
