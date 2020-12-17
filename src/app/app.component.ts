@@ -44,6 +44,6 @@ export class AppComponent{
       }
 
       onSignInClicked(){
-        this.router.navigateByUrl('/login-form');
+        this.router.navigateByUrl('/login');
       }
     }
