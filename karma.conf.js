@@ -20,10 +20,14 @@ module.exports = function (config) {
     },
     coverageReporter: {
 <<<<<<< HEAD
+<<<<<<< HEAD
       dir: require('path').join(__dirname, './coverage/HS-app'),
 =======
       dir: require('path').join(__dirname, './coverage/hs-app'),
 >>>>>>> development
+=======
+      dir: require('path').join(__dirname, './coverage/hs-app'),
+>>>>>>> reg-form-backend
       subdir: '.',
       reporters: [
         { type: 'html' },

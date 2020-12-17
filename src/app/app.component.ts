@@ -28,7 +28,7 @@ export class AppComponent{
       }
 
       isLoginForm(){
-        return this.router.url === '/login-form';
+        return this.router.url === '/login';
       }
 
       isForgotPassword(){
@@ -46,4 +46,4 @@ export class AppComponent{
       onSignInClicked(){
         this.router.navigateByUrl('/login-form');
       }
-}
+    }
