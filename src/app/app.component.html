@@ -1,11 +1,6 @@
-<div class="login-wrapper">
+<router-outlet *ngIf="isForgotPassword()"></router-outlet>
+<div class="login-wrapper" *ngIf="isHomeRoute()">
     
     <app-login></app-login>
-    
-<div id="forgot-pw">
-    
-   <app-reset-password></app-reset-password>
-    
-</div>
-    
+
 </div>
