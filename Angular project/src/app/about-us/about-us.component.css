@@ -1,0 +1,35 @@
+.aboutUs {
+  background-color:white;
+  min-height: 80vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.aboutUsTextArea {
+  text-align: justify;
+  padding-top: 7vh;
+  padding-right: 40%;
+  padding-left: 10%;
+  font-size: 2vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.center {
+  display: block;
+  margin-left: 50%;
+  margin-top: auto;
+  width: 70%;
+  transform: translateY(-120%);
+}
+img.HSSpicture {
+  border: 2px solid #ddd;
+  border-radius: 3px;
+  padding-right: 2px;
+  border-color: black;
+}
+.aboutUsPicArea {
+  padding-right: 23vh;
+  padding-top: 1vh;
+  padding-left: 40%;
+}
+.h2{
+  text-align: center;
+}
