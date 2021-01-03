@@ -1,6 +1,6 @@
 {
 "development":{
-    "PORT":4000,
+    "PORT":3002,
     "MONGODB_URI":"mongodb://localhost:27017/Material"
 },
 "production":{
