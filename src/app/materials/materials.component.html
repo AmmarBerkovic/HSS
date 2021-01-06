@@ -6,19 +6,16 @@
 
 <body>
 
-<div class="gridSys">
+    <div class="sidebar">
+      <a (click)='bookSectionLayout()' [ngStyle]="{'background-color' : activeLayout ? 'grey' : ''}">Books</a>
+      <a (click)='videoSectionLayout()' [ngStyle]="{'background-color' : !activeLayout ? 'grey' : ''}">Videos</a>
+    </div>
   <div class="wholeForm">
     <app-books-form *ngIf="activeLayout"></app-books-form>
     <app-videos-form *ngIf="!activeLayout"></app-videos-form>
   </div>
 
-  <div class="bar">
-    <div class="sidebar">
-      <a (click)='bookSectionLayout()' [ngStyle]="{'background-color' : activeLayout ? 'grey' : ''}">Books</a>
-      <a (click)='videoSectionLayout()' [ngStyle]="{'background-color' : !activeLayout ? 'grey' : ''}">Videos</a>
-    </div>
-  </div>
-</div>
+  
 
 </body>
 </html> 

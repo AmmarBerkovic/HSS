@@ -196,8 +196,8 @@ select {
   padding: 0;
   width: 200px;
   background-color: #f1f1f1;
-  /*position: fixed;*/
-  height: 100%;
+  position: absolute;
+  height: 70vh;
   overflow: auto;
 }
 
@@ -217,23 +217,8 @@ select {
   background-color: #555;
   color: white;
 }
-
-div.content {
-  margin-left: 200px;
-  padding: 1px 16px;
-  height: 1000px;
-}
-
 /*grid*/
 
-.gridSys {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 10px;
-  background-color: white;
-  padding: 10px;
-}
-
 .wholeForm {
-  grid-column: 1 / span 5;
+  margin-left: 15vh;
 }
