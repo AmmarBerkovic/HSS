@@ -1,0 +1,62 @@
+.flname {
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.mail{
+    font-size: 20px;
+}
+
+.pass{
+    font-size: 20px;
+}
+
+.clear {
+    margin-top: 5%;
+    background-color:#e05118;
+    font-size: 16px;
+    width: 50%;
+    text-align: center;
+    padding: 15px 32px;
+    margin-bottom: 2%;
+    text-decoration: #2f302f;
+    
+
+
+}
+
+.sign{
+    margin-top: 2%;
+    font-size: 19px;
+    font-weight: bold;
+    width: 50%;
+    text-align: center;
+    padding: 15px 20px;
+    margin-bottom: 2%;
+}
+
+.clear:hover{
+    background-color: #d4663b;
+}
+
+/*.box{
+    transform: translateX(-750%);
+}*/
+
+.rmb{
+    text-decoration: darkgray;
+}
+
+.aa {
+    text-decoration: rgb(23,201,255);
+}
+
+span{
+    position: absolute;
+    right: 15px;
+    transform: translate(0,-50%);
+    top: 50%;
+    cursor: pointer;
+}
+
+
