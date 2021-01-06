@@ -1,0 +1,59 @@
+<h1>Videos</h1><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<form class="example" action="/action_page.php">
+    <input type="text" placeholder="Search materials.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
+  
+  <div class="search-by-field">
+   <p class="search-by">Search by:</p>
+  
+    <div class="dropdown">
+     <select class="dropbtn" [(ngModel)]="menu.option">
+        <option *ngFor="let option of options" [ngValue]="option">{{option.name}}</option>
+     </select>
+    </div>
+  
+    <div class="advertisment-checkbox">
+     <label class="container">Advertisment friendly
+       <input type="checkbox">
+       <span class="checkmark"></span>
+     </label>
+    </div>
+  
+  </div>
+  
+  <table id="t01">
+  
+      <tr>
+        <th>Title</th>
+        <th>Link</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+      </tr>
+  </table>
+  <div class="w3-container">
+    <div class="w3-center">
+    <div class="w3-bar w3-border w3-round">
+      <a href="#" class="w3-bar-item w3-button">&laquo;</a>
+      <a href="#" class="w3-bar-item w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button">2</a>
+      <a href="#" class="w3-bar-item w3-button">&raquo;</a>
+    </div>
+    </div>
+    
+    </div>
