@@ -41,7 +41,7 @@ form.example input[type="text"] {
   margin-top: 5vh;
 
   padding: 10px;
-  font-size: 17px;
+  font-size: 20px;
   border: 1px solid grey;
   float: left;
   width: 80%;
@@ -57,7 +57,7 @@ form.example button {
   padding: 10px;
   background: #6d7993;
   color: white;
-  font-size: 17px;
+  font-size: 20px;
   border: 1px solid grey;
   border-left: none;
   cursor: pointer;
@@ -76,7 +76,7 @@ form.example::after {
 .search-by-field {
   margin-left: 5%;
   width: 80%;
-  font-size: 17px;
+  font-size: 20px;
   float: left;
   padding: 0;
   height: 100px;
@@ -86,7 +86,7 @@ form.example::after {
 
 .search-by {
   padding-top: 10px;
-  font-size: 17px;
+  font-size: 20px;
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -96,7 +96,7 @@ select {
   background-color: #6d7993;
   color: white;
   padding: 10px;
-  font-size: 17px;
+  font-size: 20px;
   border: none;
   cursor: pointer;
   position: absolute;
@@ -108,7 +108,7 @@ select {
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-  font-size: 16px;
+  font-size: 20px;
   height: 16px;
   padding: 10px;
   vertical-align: middle;
@@ -121,7 +121,7 @@ select {
   display: block;
   text-align: left;
   cursor: pointer;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 /* Change color of dropdown links on hover */
@@ -142,7 +142,7 @@ select {
 
 .advertisment-checkbox {
   padding: 25px;
-  font-size: 17px;
+  font-size: 20px;
   width: 100%;
   cursor: pointer;
   position: absolute;
@@ -154,7 +154,7 @@ select {
 
 /* The container */
 .container {
-  font-size: 17px;
+  font-size: 20px;
   padding-left: 20px;
   position: absolute;
   cursor: pointer;
