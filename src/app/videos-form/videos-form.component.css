@@ -177,8 +177,8 @@ select {
 /* Create a custom checkbox */
 .checkmark {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 5;
+  left: 5;
   height: 16px;
   width: 16px;
   background-color: #eee;

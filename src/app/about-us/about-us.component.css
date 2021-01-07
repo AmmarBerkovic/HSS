@@ -1,5 +1,5 @@
 .aboutUs {
-  background-color:white;
+  background-color: white;
   min-height: 80vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -30,6 +30,6 @@ img.HSSpicture {
   padding-top: 1vh;
   padding-left: 40%;
 }
-.h2{
+.h2 {
   text-align: center;
 }

@@ -19,5 +19,11 @@ export class MaterialsComponent implements OnInit {
   videoSectionLayout(){
     this.activeLayout = false;
   }
+  styleObject(){
+    if (this.activeLayout){
+        return "{'background-color':'#6d7993','color':'white'}";
+    }
+    return {};
+  }
 
 }

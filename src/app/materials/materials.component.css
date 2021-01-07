@@ -224,3 +224,7 @@ select {
 .wholeForm {
   margin-left: 15vh;
 }
+
+.space {
+  min-height: 76vh;
+}
