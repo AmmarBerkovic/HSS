@@ -11,19 +11,6 @@
     font-size: 20px;
 }
 
-.clear {
-    margin-top: 5%;
-    background-color:#e05118;
-    font-size: 16px;
-    width: 50%;
-    text-align: center;
-    padding: 15px 32px;
-    margin-bottom: 2%;
-    text-decoration: #2f302f;
-    
-
-
-}
 
 .sign{
     margin-top: 2%;
@@ -48,7 +35,7 @@
 }
 
 .aa {
-    text-decoration: rgb(23,201,255);
+    text-decoration: #6d7993;
 }
 
 span{
