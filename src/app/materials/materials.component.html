@@ -7,8 +7,8 @@
 <body>
 
     <div class="sidebar">
-      <a (click)='bookSectionLayout()' [ngStyle]="{'background-color' : activeLayout ? 'grey' : ''}">Books</a>
-      <a (click)='videoSectionLayout()' [ngStyle]="{'background-color' : !activeLayout ? 'grey' : ''}">Videos</a>
+      <a (click)='bookSectionLayout()' [ngStyle]="{'background-color' : activeLayout ? '#6d7993' : ''}">Books</a>
+      <a (click)='videoSectionLayout()' [ngStyle]="{'background-color' : !activeLayout ? '#6d7993' : ''}">Videos</a>
     </div>
   <div class="wholeForm">
     <app-books-form *ngIf="activeLayout"></app-books-form>
