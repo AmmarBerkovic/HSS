@@ -9,8 +9,7 @@ import { AppComponent } from './app.component';
 
 //routes
 import { appRoutes } from './routes';
-import { UserProfileComponent } from './user-profile/user-profile.component';
-import { FormComponent } from './form/form.component';
+import { FormNewPasswordComponent } from './form-new-password/form-new-password.component';
 
 //other
 
@@ -18,11 +17,7 @@ import { FormComponent } from './form/form.component';
 @NgModule({
   declarations: [
     AppComponent,
- 
-    UserProfileComponent,
- 
-    FormComponent,
-
+    FormNewPasswordComponent
   ],
   imports: [
     BrowserModule,
