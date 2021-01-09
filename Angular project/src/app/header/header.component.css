@@ -4,7 +4,8 @@
 .header {
     overflow: hidden;
     background-color:  #6D7993;
-    padding: 20px 10px;
+    padding: 25px 10px;
+
   }
 
 
@@ -17,7 +18,7 @@
     font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
     line-height: 25px;
-    border-radius: 4px;
+    border-radius: 8px;
   }
 
   .brand {
@@ -79,8 +80,8 @@
   }
   .button{
     background-color: #6D7993;
-    top:5px;
-    right:-1px;
+    top:0.5px;
+    right:7px;
     border: none;
     color: #d5d5d5;
     padding: 10px 20px;
@@ -93,6 +94,7 @@
     transition-duration: 0.4s;
     cursor: pointer;
     position: relative;
+    border-radius: 8px;
 
   }
 
