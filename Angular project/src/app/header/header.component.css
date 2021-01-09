@@ -6,8 +6,8 @@
     background-color:  #6D7993;
     padding: 20px 10px;
   }
-  
- 
+
+
   .header a {
     float: left;
     color: white;
@@ -27,18 +27,29 @@
     width: 100px;
     height: 85px;
 }
-  
+
+
   .header a:hover {
+    background-color: rgb(255, 255, 255);
+    color: #6d7993;
+
+  }
+
+
+
+  .header a:active {
+    background-color: rgb(56, 38, 52);
+    color: #D5D5D5;
+  }
+  .header a:after {
     background-color: white;
     color: #6d7993;
   }
-  
-  
-  .header a.active {
-    background-color: rgb(38, 47, 56);
-    color: #D5D5D5;
+  .header a:focus{
+    background-color: white;
+    color: #6D7993;
   }
-  
+
   .header-left{
     float: left;
   }
@@ -46,7 +57,7 @@
   .header-right{
     float: right;
   }
- 
+
   @media screen and (max-width: 500px) {
     .header a {
       float: none;
@@ -82,14 +93,16 @@
     transition-duration: 0.4s;
     cursor: pointer;
     position: relative;
+
   }
 
   .button1{
     background-color: #6D7993;
     color: white;
     border: 2px solid white;
+
   }
-  
+
   .button1:hover{
     background-color: #96858F;
     color: white;
