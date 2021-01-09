@@ -1,0 +1,49 @@
+.flname {
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.mail{
+    font-size: 20px;
+}
+
+.pass{
+    font-size: 20px;
+}
+
+.sign{
+    margin-top: 2%;
+    font-size: 20px;
+    font-weight: bold;
+    width: 38%;
+    text-align: center;
+    padding: 15px 32px;
+    margin-bottom: 1%;
+}
+
+.rmb{
+    text-decoration: darkgray;
+}
+
+.aa {
+    text-decoration: rgb(23,201,255);
+}
+
+.passw{
+    display: inline;
+}
+
+.container{
+    position: relative;
+    transform: translateX(0%);   
+}
+
+.eye {
+    transform: translateX(-10%);
+}
+.container i {
+    margin-left: -30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
