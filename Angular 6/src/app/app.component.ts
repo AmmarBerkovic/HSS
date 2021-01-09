@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-
+declare const toggle:any;
+declare const toggle1:any;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  onClick(){
+    toggle();
+  }
 }

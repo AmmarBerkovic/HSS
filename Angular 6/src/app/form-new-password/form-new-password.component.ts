@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-
+declare const toggle:any;
+declare const toggle1:any;
 
 @Component({
   selector: 'form-new-password',
@@ -8,10 +9,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./form-new-password.component.css']
 })
 export class FormNewPasswordComponent implements OnInit {
+  onClick(){
+    toggle();
+  }
+  constructor() { }
 
-  constructor(){}
-
-  ngOnInit(): void{
-    
+  ngOnInit() {
   }
 }
