@@ -4,8 +4,8 @@
  </a>
 <div class="header">
 <div class="header-left">
-  <a href="index.html" (click)='setHomeLayout()' [ngStyle]="{'background-color' : activeLayout === 1 ? 'white' : '', 'color' : activeLayout === 1 ? '#6D7993':''}">Home</a> 
-  <a routerLink="materials" (click)='setMaterialsLayout()' [ngStyle]="{'background-color' : activeLayout === 2 ? 'white' : '', 'color' : activeLayout === 2 ? '#6D7993':''}">Materials</a>
+  <a class="rightMargin" href="index.html" (click)='setHomeLayout()' [ngStyle]="{'background-color' : activeLayout === 1 ? 'white' : '', 'color' : activeLayout === 1 ? '#6D7993':''}">Home</a> 
+  <a class="rightMargin" routerLink="materials" (click)='setMaterialsLayout()' [ngStyle]="{'background-color' : activeLayout === 2 ? 'white' : '', 'color' : activeLayout === 2 ? '#6D7993':''}">Materials</a>
   <a routerLink="about" (click)='setAboutUsLayout()' [ngStyle]="{'background-color' : activeLayout === 3 ? 'white' : '', 'color' : activeLayout === 3 ? '#6D7993':''}">About us</a>
 </div>
 
