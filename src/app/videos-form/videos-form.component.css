@@ -139,23 +139,21 @@ select {
   background-color: #6d7993;
   opacity: 90%;
 }
-
 .advertisment-checkbox {
   padding: 25px;
   font-size: 20px;
-  width: 100%;
+  width: 10%;
   cursor: pointer;
   position: absolute;
   display: inline-block;
   vertical-align: middle;
-  margin-left: 180px;
+  margin-left: 11%;
   margin-top: 5px;
 }
 
 /* The container */
 .container {
   font-size: 20px;
-  padding-left: 20px;
   position: absolute;
   cursor: pointer;
   vertical-align: middle;
@@ -173,14 +171,14 @@ select {
   height: 0;
   width: 0;
 }
-
 /* Create a custom checkbox */
 .checkmark {
   position: absolute;
-  top: 5;
   left: 5;
   height: 16px;
   width: 16px;
+  margin-top: 5px;
+  margin-left: 5px;
   background-color: #eee;
 }
 
