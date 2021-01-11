@@ -8,21 +8,29 @@ import { HttpClientModule,HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { SignUpComponent } from './user/sign-up/sign-up.component';
+import { FormEnterCodeComponent } from './user/form-enter-code/form-enter-code.component';
 //routes
 import { appRoutes } from './routes';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { SignInComponent } from './user/sign-in/sign-in.component';
 import { UserService } from './shared/user.service';
+
 //other
 import { AuthGuard } from './auth/auth.guard';
 import { AuthInterceptor } from './auth/auth.interceptor';
+import { from } from 'rxjs';
+import { FormEnterEmailComponent } from './user/form-enter-email/form-enter-email.component';
+import { FormNewPasswordComponent } from './user/form-new-password/form-new-password.component';
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
     SignUpComponent,
     UserProfileComponent,
-    SignInComponent
+    SignInComponent,
+    FormEnterEmailComponent,
+    FormEnterCodeComponent,
+    FormNewPasswordComponent
   ],
   imports: [
     BrowserModule,

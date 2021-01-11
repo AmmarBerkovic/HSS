@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 
@@ -9,7 +10,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormEnterCodeComponent implements OnInit {
 
-  constructor(){}
+  constructor(private router : Router){}
+
+  onDoneClicked(){
+    this.router.navigateByUrl('/new-password');
+  }
 
   ngOnInit(): void{
     

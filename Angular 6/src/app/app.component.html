@@ -1,1 +1,4 @@
-<router-outlet></router-outlet>
+<router-outlet *ngIf="isLoginForm()"></router-outlet>
+<router-outlet *ngIf="isForgotPassword()"></router-outlet>
+<router-outlet *ngIf="isEnterCode()"></router-outlet>
+<router-outlet *ngIf="isNewPassword()"></router-outlet> 
