@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-
-
 @Component({
   selector: 'form-enter-code',
   templateUrl: './form-enter-code.component.html',

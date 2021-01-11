@@ -1,7 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css?family=Poppins');
 
-/* BASIC */
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 
 html {
   background-color: #6d7993;
@@ -325,7 +323,7 @@ th:last-child {
   
 tr {
   border-top: 1px solid #C1C3D1;
-  border-bottom-: 1px solid #C1C3D1;
+  border-bottom: 1px solid #C1C3D1;
   color:#666B85;
   font-size:16px;
   font-weight:normal;

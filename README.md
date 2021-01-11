@@ -1,2 +1,0 @@
-# HSLibrary internship group
-

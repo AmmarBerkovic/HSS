@@ -42,7 +42,11 @@ import { FormNewPasswordComponent } from './user/form-new-password/form-new-pass
     provide: HTTP_INTERCEPTORS,
     useClass: AuthInterceptor,
     multi: true
-  },AuthGuard,UserService],
-  bootstrap: [AppComponent]
+  },
+  AuthGuard,
+  UserService,
+  { provide: Window, useValue: window }
+],
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
