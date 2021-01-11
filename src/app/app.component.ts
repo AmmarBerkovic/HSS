@@ -19,6 +19,7 @@ export class AppComponent {
   isMaterials(){
     return this.router.url === '/materials';
   }
+  
 
 
 }
