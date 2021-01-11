@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-us.component.css']
 })
 export class AboutUsComponent implements OnInit {
+  declare slideShow: any;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.slideShow.showSlides(1);
   }
 
 }
