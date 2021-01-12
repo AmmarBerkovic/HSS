@@ -9,7 +9,7 @@ export class BooksFormComponent implements OnInit {
   title = 'app works!';
   books = [
     {
-      "id":"1",
+      "id":"8",
       "title": "Orthopadiestechnische Indikationen ",
       "author": "Andre-R. Baehler, Stefan Bieringer",
       "date":"17.10.2007.",
@@ -21,7 +21,7 @@ export class BooksFormComponent implements OnInit {
     },
    
       {
-      "id":"2",
+      "id":"6",
       "title":"Gaint analysis in the Science of Rehabilitation",
       "author":"Joel A. DeLisa, M.D.",
       "date":"24.01.2012.",
@@ -32,7 +32,7 @@ export class BooksFormComponent implements OnInit {
       "link":"http://hs-storage.org/library/books/Gait_Analysis_in_the_Science_of_Rehabilitation.pdf"
       },
       {
-      "id":"3",
+      "id":"5",
       "title":"Foundations of Clinical Research: Application to Practice",
       "author":"Leslie G. Portney ",
       "date":"04.07.2009.",
@@ -53,7 +53,7 @@ export class BooksFormComponent implements OnInit {
       "publisher":"George Brown College Prosthetic & Orthotic Programs",
       "link":"http://hs-storage.org/library/books/Clinically_and_Technically_Applied_Biomechanics.pdf"
       },
-      {"id":"5",
+      {"id":"3",
       "title":"Biomechanics: Problem Solving for Functional Activity",
       "author":"Susan L. Roberts, M.Div ",
       "date":"21.09.1991.",
@@ -63,7 +63,7 @@ export class BooksFormComponent implements OnInit {
       "publisher":"Mosby Year Book" ,
       "link":"http://hs-storage.org/library/books/Biomechanics.pdf"
       },
-      {"id":"6",
+      {"id":"2",
       "title":"Biomechanics in Clinic and Research: An interactive teaching and learning course",
       "author":"Jim Richards",
       "date":"09.02.2009.",
@@ -83,7 +83,7 @@ export class BooksFormComponent implements OnInit {
       "publisher":"Mediatryck",
       "link":"http://hs-storage.org/library/books/Lower_Limb_Amputation_in_Patients_with_Vascular_Disease.pdf "
       },
-      {"id":"8",
+      {"id":"9",
       "title":"Qualitative Methods for Populations and Health Research",
       "author":"Bencha Yoddumnem-Attig, George Allen Attig, Kerry Richter",
       "date":"12.01.2001.",
@@ -93,7 +93,7 @@ export class BooksFormComponent implements OnInit {
       "publisher":"The Institute for Population and Social Research, Mahidol University",
       "link":"http://hs-storage.org/library/books/Qualitative_Methods_for_Population_and_Health_Research.pdf"
       },
-      {"id":"9",
+      {"id":"10",
       "title":"Spinal Cord Injury: Functional Rehabilitation",
       "author":"Martha Freeman Somers",
       "date":"19.08.2010.",
@@ -104,7 +104,7 @@ export class BooksFormComponent implements OnInit {
       "link":"http://hs-storage.org/library/books/Spinal_Cord_Injury.pdf"
       },
       {
-        "id":"10",
+        "id":"1",
         "title":"Anatomy and Human Movement: Structure and Function",
         "author":"Nigel Palastanga, Roger Soames",
         "date":"24.01.2012.",
