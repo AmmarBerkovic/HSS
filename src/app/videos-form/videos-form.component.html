@@ -54,7 +54,7 @@
         </thead>
         <tbody>
           <tr *ngFor="let video of videos | orderBy: key : reverse | filter:filter | paginate: { itemsPerPage: 5, currentPage: p }; let i = index">
-            <td>{{i}}</td>
+            <td>{{video.id}}</td>
             <td>{{video.title}}</td>
             <td>{{video.author}}</td>
             <td>{{video.date}}</td>

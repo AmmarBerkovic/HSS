@@ -53,7 +53,7 @@
       </thead>
       <tbody>
         <tr *ngFor="let book of books | orderBy: key : reverse | filter:filter | paginate: { itemsPerPage: 5, currentPage: p }; let i = index">
-          <td>{{i}}</td>
+          <td>{{book.id}}</td>
           <td>{{book.title}}</td>
           <td>{{book.author}}</td>
           <td>{{book.date}}</td>
