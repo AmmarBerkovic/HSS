@@ -32,10 +32,8 @@ img {
 }
 .slideShowPic {
   width: 100%;
-  max-height: 80vh;
-  min-height: 50vh;
-  max-width: 80vh;
-  min-height: 50vh;
+  max-height: 70vh;
+  min-height: 70vh;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
