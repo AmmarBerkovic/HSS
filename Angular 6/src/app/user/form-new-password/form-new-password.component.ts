@@ -15,4 +15,7 @@ export class FormNewPasswordComponent implements OnInit {
 
   ngOnInit() {
   }
+  changed(){
+    window.alert('Password change is successfull');
+  }
 }
