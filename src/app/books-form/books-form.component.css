@@ -34,12 +34,21 @@ body {
 * {
   box-sizing: border-box;
 }
-
+.form-control {
+  margin-right: auto;
+  margin-top: 5vh;
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+/*
 form.example input[type="text"] {
   margin-left: 5%;
   margin-right: auto;
   margin-top: 5vh;
-
   padding: 10px;
   font-size: 20px;
   border: 1px solid grey;
@@ -71,7 +80,7 @@ form.example::after {
   content: "";
   clear: both;
   display: table;
-}
+}*/
 
 .search-by-field {
   margin-left: 5%;
@@ -209,8 +218,11 @@ select {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-span{
+span {
   position: relative;
-right:-85px;
+  right: -85px;
 }
-
+.link {
+  max-width: 3vh;
+  max-height: 3vh;
+}

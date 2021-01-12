@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./books-form.component.css']
 })
 export class BooksFormComponent implements OnInit {
-  term?:any ;
+  term:any =null;
 
   filterData = [
     {
@@ -17,7 +17,8 @@ export class BooksFormComponent implements OnInit {
       "pages":"601",
       "edition":"Second edition",
       "languages":"German",
-      "publisher":"Huber"
+      "publisher":"Huber",
+      "link":"http://hs-storage.org/library/books/baehler_orthopaedietechnische-indikatio_9783456939384.pdf"
     },
    
       {
@@ -28,7 +29,8 @@ export class BooksFormComponent implements OnInit {
       "pages":"65",
       "edition":"Second edition",
       "languages":"English",
-      "publisher":"Department of Veterans Affairs"
+      "publisher":"Department of Veterans Affairs",
+      "link":"http://hs-storage.org/library/books/Gait_Analysis_in_the_Science_of_Rehabilitation.pdf"
       },
       {
       "id":"3",
@@ -38,7 +40,8 @@ export class BooksFormComponent implements OnInit {
       "pages":"226",
       "edition":"Third edition",
       "languages":"English",
-      "publisher":"Julie Levin Alexander"
+      "publisher":"Julie Levin Alexander",
+      "link":"http://hs-storage.org/library/books/Foundations_of_Clinical_Research.pdf"
       },
       {
       "id":"4",
@@ -48,7 +51,8 @@ export class BooksFormComponent implements OnInit {
       "pages":"108",
       "edition":"Sixth edition",
       "languages":"English",
-      "publisher":"George Brown College Prosthetic & Orthotic Programs"
+      "publisher":"George Brown College Prosthetic & Orthotic Programs",
+      "link":"http://hs-storage.org/library/books/Clinically_and_Technically_Applied_Biomechanics.pdf"
       },
       {"id":"5",
       "title":"Biomechanics: Problem Solving for Functional Activity",
@@ -57,7 +61,8 @@ export class BooksFormComponent implements OnInit {
       "pages":"105",
       "edition":"Second edition",
       "languages":"English",
-      "publisher":"Mosby Year Book" 
+      "publisher":"Mosby Year Book" ,
+      "link":"http://hs-storage.org/library/books/Biomechanics.pdf"
       },
       {"id":"6",
       "title":"Biomechanics in Clinic and Research: An interactive teaching and learning course",
@@ -66,7 +71,8 @@ export class BooksFormComponent implements OnInit {
       "pages":"112",
       "edition":"First edition",
       "languages":"English",
-      "publisher":"Elsevier"
+      "publisher":"Elsevier",
+      "link":"http://hs-storage.org/library/books/Biomechanics_in_Clinic_and_Research.pdf "
       },
       {"id":"7",
       "title":"Lower Limb Amputation in Patients with Vascular Disease",
@@ -75,7 +81,8 @@ export class BooksFormComponent implements OnInit {
       "pages":"50",
       "edition":"Fifth edition",
       "languages":"English",
-      "publisher":"Mediatryck"
+      "publisher":"Mediatryck",
+      "link":"http://hs-storage.org/library/books/Lower_Limb_Amputation_in_Patients_with_Vascular_Disease.pdf "
       },
       {"id":"8",
       "title":"Qualitative Methods for Populations and Health Research",
@@ -84,7 +91,8 @@ export class BooksFormComponent implements OnInit {
       "pages":"226",
       "edition":"Third edition",
       "languages":"English",
-      "publisher":"The Institute for Population and Social Research, Mahidol University"
+      "publisher":"The Institute for Population and Social Research, Mahidol University",
+      "link":"http://hs-storage.org/library/books/Qualitative_Methods_for_Population_and_Health_Research.pdf"
       },
       {"id":"9",
       "title":"Spinal Cord Injury: Functional Rehabilitation",
@@ -93,7 +101,8 @@ export class BooksFormComponent implements OnInit {
       "pages":"240",
       "edition":"Third edition",
       "languages":"English",
-      "publisher":"The Institute of Rehabilitation and Research, University of Pittsburgh Medical Center" 
+      "publisher":"The Institute of Rehabilitation and Research, University of Pittsburgh Medical Center" ,
+      "link":"http://hs-storage.org/library/books/Spinal_Cord_Injury.pdf"
       },
       {
         "id":"10",
@@ -103,7 +112,8 @@ export class BooksFormComponent implements OnInit {
         "pages":"635",
         "edition":"Sixth edition",
         "languages":"English",
-        "publisher":"Elsevier",  
+        "publisher":"Elsevier",
+        "link":"http://hs-storage.org/library/books/nigel palastanga_ roger soames-anatomy and human movement _ structure and function-churchill livingstone (2012).pdf"
         }
 
   ]
