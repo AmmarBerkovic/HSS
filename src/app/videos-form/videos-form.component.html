@@ -1,67 +1,33 @@
-<form class="example" action="/action_page.php">
-    <input type="text" placeholder="Search materials.." name="search">
-    <button type="submit"><i class="fa fa-search"></i></button>
-  </form>
-  
-  <div class="search-by-field">
-   <p class="search-by">Search by:</p>
-  
-    <div class="dropdown">
-     <select class="dropbtn" [(ngModel)]="menu.option">
-        <option *ngFor="let option of options" [ngValue]="option">{{option.name}}</option>
-     </select>
-    </div>
-  
-    <div class="advertisment-checkbox">
-     <label class="container">Advertisable
-       <input type="checkbox">
-       <span class="checkmark"></span>
-     </label>
-    </div>
-  
+<span>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Search Here" [(ngModel)]="term">
   </div>
-  
-  <table id="t01">
-  
-    <tr>
-      <th>ID</th>
-      <th>Title</th>
-      <th>Author</th>
-      <th>Date</th>
-      <th>Duration</th>
-      <th>Resolution</th>
-      <th>Advertisable</th>
-      <th>Watermark</th>
-    </tr>
-    <tr>
-      <td>BOOKS</td>
-      <td>BOOKS</td>
-      <td>BOOKS</td>
-      <td>BOOKS</td>
-      <td>BOOKS</td>
-      <td>BOOKS</td>
-      <td>BOOKS</td>
-      <td>BOOKS</td>
-    </tr>
-    <tr>
-      <td>BOOKS</td>
-      <td>BOOKS</td>
-      <td>BOOKS</td>
-      <td>BOOKS</td>
-      <td>BOOKS</td>
-      <td>BOOKS</td>
-      <td>BOOKS</td>
-      <td>BOOKS</td>
-    </tr>
-    <tr>
-      <td>BOOKS</td>
-      <td>BOOKS</td>
-      <td>BOOKS</td>
-      <td>BOOKS</td>
-      <td>BOOKS</td>
-      <td>BOOKS</td>
-      <td>BOOKS</td>
-      <td>BOOKS</td>
-    </tr>
+  </span>
+  <table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Title</th>
+            <th scope="col">Author</th>
+            <th scope="col">Date</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Resolution</th>
+            <th scope="col">Advertisable</th>
+            <th scope="col">Watermark</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of filterData | filter:term">
+            <td>{{item.id}}</td>
+            <td>{{item.title}}</td>
+            <td>{{item.author}}</td>
+            <td>{{item.date}}</td>
+            <td>{{item.duration}}</td>
+            <td>{{item.resolution}}</td>
+            <td>{{item.advertisable}}</td>
+            <td>{{item.watermark}}</td>
+        </tr>
+    </tbody>
   </table>
   
+    
