@@ -11,6 +11,8 @@ td {
   border: 1px solid black;
   border-collapse: collapse;
 }
+th{ background-color: #6d7993;
+color:white;}
 th,
 td {
   padding: 15px;
@@ -44,43 +46,6 @@ body {
   width: 80%;
   background: #f1f1f1;
 }
-/*
-form.example input[type="text"] {
-  margin-left: 5%;
-  margin-right: auto;
-  margin-top: 5vh;
-  padding: 10px;
-  font-size: 20px;
-  border: 1px solid grey;
-  float: left;
-  width: 80%;
-  background: #f1f1f1;
-}
-
-form.example button {
-  margin-right: auto;
-  margin-top: 5vh;
-
-  float: left;
-  width: 10%;
-  padding: 10px;
-  background: #6d7993;
-  color: white;
-  font-size: 20px;
-  border: 1px solid grey;
-  border-left: none;
-  cursor: pointer;
-}
-
-form.example button:hover {
-  background: #6d7993;
-}
-
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
-}*/
 
 .search-by-field {
   margin-left: 5%;
@@ -92,99 +57,18 @@ form.example::after {
   display: flex;
   justify-content: left;
 }
-
-.search-by {
-  padding-top: 10px;
-  font-size: 20px;
+span {
   position: relative;
-  display: inline-block;
-  vertical-align: middle;
+  right: -85px;
 }
-
-select {
-  background-color: #6d7993;
-  color: white;
-  padding: 10px;
-  font-size: 20px;
-  border: none;
+.link {
+  max-width: 3vh;
+  max-height: 3vh;
+}
+thead>tr>th {
   cursor: pointer;
-  position: absolute;
-  display: inline-block;
-  vertical-align: middle;
-  width: fit-content;
-  margin-top: 8px;
 }
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  font-size: 20px;
-  height: 16px;
-  padding: 10px;
-  vertical-align: middle;
-}
-
-/* Options inside the dropdown */
-.dropdown option {
-  color: white;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-  cursor: pointer;
-  font-size: 20px;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown option:hover {
-  background-color: #f1f1f1;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown {
-  display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover select {
-  background-color: #6d7993;
-  opacity: 90%;
-}
-
-.advertisment-checkbox {
-  padding: 25px;
-  font-size: 20px;
-  width: 10%;
-  cursor: pointer;
-  position: absolute;
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 11%;
-  margin-top: 5px;
-}
-
-/* The container */
-
-/* Hide the browser's default checkbox */
-.container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-/* Create a custom checkbox */
-.checkmark {
-  position: absolute;
-  top: 5;
-  left: 5;
-  height: 16px;
-  width: 16px;
-  margin-top: 5px;
-  margin-left: 5px;
-  background-color: #eee;
-}
-
-/* On mouse-over, add a grey background color */
+* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
   background-color: #ccc;
 }
@@ -218,11 +102,52 @@ select {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-span {
-  position: relative;
-  right: -85px;
+
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 5;
+  left: 5;
+  height: 16px;
+  width: 16px;
+  margin-top: 5px;
+  margin-left: 5px;
+  background-color: #eee;
 }
-.link {
-  max-width: 3vh;
-  max-height: 3vh;
+/* Hide the browser's default checkbox */
+
+* The container <div> - needed to position the dropdown content */
+.dropdown {
+  font-size: 20px;
+  height: 16px;
+  padding: 10px;
+  vertical-align: middle;
 }
+
+/* Options inside the dropdown */
+.dropdown option {
+  color: white;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown option:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover select {
+  background-color: #6d7993;
+  opacity: 90%;
+}
+

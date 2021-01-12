@@ -6,9 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./books-form.component.css']
 })
 export class BooksFormComponent implements OnInit {
-  term:any =null;
-
-  filterData = [
+  title = 'app works!';
+  books = [
     {
       "id":"1",
       "title": "Orthopadiestechnische Indikationen ",
@@ -114,10 +113,18 @@ export class BooksFormComponent implements OnInit {
         "languages":"English",
         "publisher":"Elsevier",
         "link":"http://hs-storage.org/library/books/nigel palastanga_ roger soames-anatomy and human movement _ structure and function-churchill livingstone (2012).pdf"
-        }
+        },
+    
+  ];
 
-  ]
-
+  //sorting
+  key: string = 'title';
+  reverse: boolean = false;
+  sort(key:any){
+    this.key = key;
+    this.reverse = !this.reverse;
+  }
+  p: number = 1;
   menu: Menu = new Menu;
   options: Array<Option> = [];
   

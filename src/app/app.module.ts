@@ -11,6 +11,9 @@ import { FormsModule } from '@angular/forms';
 import { BooksFormComponent } from './books-form/books-form.component';
 import { VideosFormComponent } from './videos-form/videos-form.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import {NgxPaginationModule} from 'ngx-pagination'; // <-- import the module
+import { Ng2OrderModule } from 'ng2-order-pipe'; //importing the module
+
 
 @NgModule({
   declarations: [
@@ -27,7 +30,9 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     BrowserModule,
     AppRoutingModule,
     Ng2SearchPipeModule,
-    FormsModule
+    FormsModule,
+    NgxPaginationModule,
+    Ng2OrderModule, // importing the sorting package here
   ],
   providers: [],
   bootstrap: [AppComponent]

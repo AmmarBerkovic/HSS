@@ -1,8 +1,12 @@
-<span>
-<div class="form-group">
-  <input type="text" class="form-control" placeholder="Search Here" [(ngModel)]="term">
-</div>
-</span>
+<div class="container">
+  <div class="row">
+   
+      <span>
+      <div class="form-group">
+      <input class="form-control" type="text" name="search" [(ngModel)]="filter">  
+    </div>    
+  </span>
+ 
 
 <div class="search-by-field">
   <p class="search-by">Search by:</p>
@@ -19,39 +23,52 @@
       <span class="checkmark"></span>
     </label>
    </div>
- 
- </div>
-<table class="table">
-  <thead>
-      <tr>
-          <th scope="col">Id</th>
-          <th scope="col">Title</th>
-          <th scope="col">Author</th>
-          <th scope="col">Date</th>
-          <th scope="col">Pages</th>
-          <th scope="col">Edition</th>
-          <th scope="col">Languages</th>
-          <th scope="col">Publisher</th>
-          <th scope="col">Link</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr *ngFor="let item of filterData | filter:term">
-          <td>{{item.id}}</td>
-          <td>{{item.title}}</td>
-          <td>{{item.author}}</td>
-          <td>{{item.date}}</td>
-          <td>{{item.pages}}</td>
-          <td>{{item.edition}}</td>
-          <td>{{item.languages}}</td>
-          <td>{{item.publisher}}</td>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th (click)="sort('title')">Title
+            <span class="glyphicon sort-icon" *ngIf="key =='title'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+          </th>
+          <th (click)="sort('author')">Author
+            <span class="glyphicon sort-icon" *ngIf="key =='author'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+          </th>
+          <th (click)="sort('date')">Date
+            <span class="glyphicon sort-icon" *ngIf="key =='date'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+          </th>
+          <th (click)="sort('pages')">Pages
+            <span class="glyphicon sort-icon" *ngIf="key =='pages'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+          </th>
+          <th (click)="sort('edition')">Edition
+            <span class="glyphicon sort-icon" *ngIf="key =='edition'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+          </th>
+          <th (click)="sort('languages')">Languages
+            <span class="glyphicon sort-icon" *ngIf="key =='languages'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+          </th>
+          <th (click)="sort('publisher')">Publisher
+            <span class="glyphicon sort-icon" *ngIf="key =='publisher'" [ngClass]="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+          </th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let book of books | orderBy: key : reverse | filter:filter | paginate: { itemsPerPage: 5, currentPage: p }; let i = index">
+          <td>{{i}}</td>
+          <td>{{book.title}}</td>
+          <td>{{book.author}}</td>
+          <td>{{book.date}}</td>
+          <td>{{book.pages}}</td>
+          <td>{{book.edition}}</td>
+          <td>{{book.languages}}</td>
+          <td>{{book.publisher}}</td>
           <td>
             <label>
-              <a href={{item.link}}><img class="link" src="assets/img/external.png"></a>
+              <a href={{book.link}}><img class="link" src="assets/img/external.png"></a>
             </label>
           </td>
-      </tr>
-  </tbody>
-</table>
-
-  
+        </tr>
+      </tbody>
+    </table>
+      <pagination-controls (pageChange)="p = $event"></pagination-controls>
+  </div>
+</div>

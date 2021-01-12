@@ -6,8 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./videos-form.component.css']
 })
 export class VideosFormComponent implements OnInit {
-  term?:any;
-  filterData=[
+ 
+  title = 'app works!';
+  videos = [
     {
       "id":"1",
       "title": "Beyond bionics: how the future od prothetics is redefining humanity ",
@@ -16,7 +17,8 @@ export class VideosFormComponent implements OnInit {
       "duration":"15m 32s",
       "resolution":"Medium",
       "advertisable":"No",
-      "watermark":"No"
+      "watermark":"No",
+      "link":"http://hs-storage.org/library/books/Spinal_Cord_Injury.pdf"
     },
    
     {
@@ -27,7 +29,8 @@ export class VideosFormComponent implements OnInit {
       "duration":"52m 59s",
       "resolution":"Low",
       "advertisable":"No",
-      "watermark":"No"
+      "watermark":"No",
+      "link":"http://hs-storage.org/library/books/Spinal_Cord_Injury.pdf"
     },
     {
       "id":"3",
@@ -37,7 +40,8 @@ export class VideosFormComponent implements OnInit {
       "duration":"1h 04m 39s",
       "resolution":"Medium",
       "advertisable":"No",
-      "watermark":"No"
+      "watermark":"No",
+      "link":"http://hs-storage.org/library/books/Spinal_Cord_Injury.pdf"
     },
     {
       "id":"4",
@@ -47,7 +51,8 @@ export class VideosFormComponent implements OnInit {
       "duration":"1h 46m 53s",
       "resolution":"Medium",
       "advertisable":"No",
-      "watermark":"No"
+      "watermark":"No",
+      "link":"http://hs-storage.org/library/books/Spinal_Cord_Injury.pdf"
     },
     {
       "id":"5",
@@ -57,7 +62,8 @@ export class VideosFormComponent implements OnInit {
       "duration":"51m 09s",
       "resolution":"High",
       "advertisable":"No",
-      "watermark":"No"
+      "watermark":"No",
+      "link":"http://hs-storage.org/library/books/Spinal_Cord_Injury.pdf"
     },
     {
       "id":"6",
@@ -67,7 +73,8 @@ export class VideosFormComponent implements OnInit {
       "duration":"1h 10m 27s",
       "resolution":"High",
       "advertisable":"Yes",
-      "watermark":"No"
+      "watermark":"No",
+      "link":"http://hs-storage.org/library/books/Spinal_Cord_Injury.pdf"
     },
     {
       "id":"7",
@@ -77,7 +84,8 @@ export class VideosFormComponent implements OnInit {
       "duration":"39m 48s",
       "resolution":"Medium",
       "advertisable":"No",
-      "watermark":"No"
+      "watermark":"No",
+      "link":"http://hs-storage.org/library/books/Spinal_Cord_Injury.pdf"
     },
     {
       "id":"8",
@@ -87,7 +95,8 @@ export class VideosFormComponent implements OnInit {
       "duration":"1h 26m 04s",
       "resolution":"Medium",
       "advertisable":"No",
-      "watermark":"No"
+      "watermark":"No",
+      "link":"http://hs-storage.org/library/books/Spinal_Cord_Injury.pdf"
     },
     {
       "id":"9",
@@ -97,7 +106,8 @@ export class VideosFormComponent implements OnInit {
       "duration":"2h 22m 41s",
       "resolution":"Low",
       "advertisable":"No",
-      "watermark":"No"
+      "watermark":"No",
+      "link":"http://hs-storage.org/library/books/Spinal_Cord_Injury.pdf"
     },
     {
       "id":"10",
@@ -107,11 +117,22 @@ export class VideosFormComponent implements OnInit {
       "duration":"55m 51s",
       "resolution":"Medium",
       "advertisable":"Yes",
-      "watermark":"No"
+      "watermark":"No",
+      "link":"http://hs-storage.org/library/books/Spinal_Cord_Injury.pdf"
     }
     
-  ]
+  
+    
+  ];
 
+  //sorting
+  key: string = 'title';
+  reverse: boolean = false;
+  sort(key:any){
+    this.key = key;
+    this.reverse = !this.reverse;
+  }
+  p: number = 1;
   menu: Menu = new Menu;
   options: Array<Option> = [];
   
