@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { query } from '@angular/core/src/render3/query';
 import { Router } from '@angular/router';
+
+  
+
 
 @Component({
   selector: 'form-enter-email',
@@ -11,7 +15,8 @@ export class FormEnterEmailComponent implements OnInit {
   constructor(private router : Router){}
 
   onSendClicked(){
-    this.router.navigateByUrl('/enter-code');
+    this.router.navigateByUrl('/enter-code');   
+
   }
 
   ngOnInit(): void{
