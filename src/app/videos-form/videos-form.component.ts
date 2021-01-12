@@ -18,7 +18,7 @@ export class VideosFormComponent implements OnInit {
       "resolution":"Medium",
       "advertisable":"No",
       "watermark":"No",
-      "link":"http://hs-storage.org/library/books/Spinal_Cord_Injury.pdf"
+      "link":"https://www.youtube.com/watch?v=GgTwa3CPrIE"
     },
    
     {
@@ -30,7 +30,7 @@ export class VideosFormComponent implements OnInit {
       "resolution":"Low",
       "advertisable":"No",
       "watermark":"No",
-      "link":"http://hs-storage.org/library/books/Spinal_Cord_Injury.pdf"
+      "link":"http://hs-storage.org/cat_i/video/cat1_youssef_salam_ulp_myo_electrics_practical_workshop_seminar_tunis_07_17_12_2018/sd_patient_measurement_casting.mp4"
     },
     {
       "id":"3",
@@ -41,7 +41,7 @@ export class VideosFormComponent implements OnInit {
       "resolution":"Medium",
       "advertisable":"No",
       "watermark":"No",
-      "link":"http://hs-storage.org/library/books/Spinal_Cord_Injury.pdf"
+      "link":"http://hs-storage.org/cat_i/video/cat1_youssef_salam_ulp_myo_electrics_practical_workshop_seminar_tunis_07_17_12_2018/assembly_of_sd_prosthesis_with_electric_elbow_final_fitting_with_patient.mp4"
     },
     {
       "id":"4",
@@ -52,7 +52,7 @@ export class VideosFormComponent implements OnInit {
       "resolution":"Medium",
       "advertisable":"No",
       "watermark":"No",
-      "link":"http://hs-storage.org/library/books/Spinal_Cord_Injury.pdf"
+      "link":"http://hs-storage.org/cat_i/video/cat1_cheryl_ann_tanudtanud_xavier_tchai_wheelchair_workshop_tunis_12_19_november_2016/basic_level_part_two.mp4"
     },
     {
       "id":"5",
@@ -63,7 +63,7 @@ export class VideosFormComponent implements OnInit {
       "resolution":"High",
       "advertisable":"No",
       "watermark":"No",
-      "link":"http://hs-storage.org/library/books/Spinal_Cord_Injury.pdf"
+      "link":"http://hs-storage.org/cat_i/video/cat1_cheryl_ann_tanudtanud_xavier_tchai_wheelchair_workshop_tunis_12_19_november_2016/basic_level_part_three.mp4"
     },
     {
       "id":"6",
@@ -74,7 +74,7 @@ export class VideosFormComponent implements OnInit {
       "resolution":"High",
       "advertisable":"Yes",
       "watermark":"No",
-      "link":"http://hs-storage.org/library/books/Spinal_Cord_Injury.pdf"
+      "link":"http://hs-storage.org/cat_i/video/cat1_cheryl_ann_tanudtanud_xavier_tchai_wheelchair_workshop_tunis_12_19_november_2016/intermediate_level_part_one.m4v"
     },
     {
       "id":"7",
@@ -85,7 +85,7 @@ export class VideosFormComponent implements OnInit {
       "resolution":"Medium",
       "advertisable":"No",
       "watermark":"No",
-      "link":"http://hs-storage.org/library/books/Spinal_Cord_Injury.pdf"
+      "link":"http://hs-storage.org/cat_i/video/cat1_cheryl_ann_tanudtanud_xavier_tchai_wheelchair_workshop_tunis_12_19_november_2016/intermediate_level_part_two.mp4"
     },
     {
       "id":"8",
@@ -96,7 +96,7 @@ export class VideosFormComponent implements OnInit {
       "resolution":"Medium",
       "advertisable":"No",
       "watermark":"No",
-      "link":"http://hs-storage.org/library/books/Spinal_Cord_Injury.pdf"
+      "link":"http://hs-storage.org/cat_i/video/cat1_cheryl_ann_tanudtanud_xavier_tchai_wheelchair_workshop_tunis_12_19_november_2016/intermediate_level_service_part_one.mp4"
     },
     {
       "id":"9",
@@ -107,7 +107,7 @@ export class VideosFormComponent implements OnInit {
       "resolution":"Low",
       "advertisable":"No",
       "watermark":"No",
-      "link":"http://hs-storage.org/library/books/Spinal_Cord_Injury.pdf"
+      "link":"http://hs-storage.org/cat_i/video/cat1_mixael_rexing_ole_orthotics_of_spastic_and_flaccid_paresis_tunis_10_15_april_2017/fitting_and_testing_afo_afo_dafo.mp4"
     },
     {
       "id":"10",
@@ -118,7 +118,7 @@ export class VideosFormComponent implements OnInit {
       "resolution":"Medium",
       "advertisable":"Yes",
       "watermark":"No",
-      "link":"http://hs-storage.org/library/books/Spinal_Cord_Injury.pdf"
+      "link":"http://hs-storage.org/cat_i/video/cat1_mixael_rexing_ole_orthotics_of_spastic_and_flaccid_paresis_tunis_10_15_april_2017/rectfication_and_thermoforming_of_kafo_afo.mp4"
     }
     
   
