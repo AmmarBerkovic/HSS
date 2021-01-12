@@ -3,6 +3,24 @@
     <input type="text" class="form-control" placeholder="Search Here" [(ngModel)]="term">
   </div>
   </span>
+
+  <div class="search-by-field">
+    <p class="search-by">Search by:</p>
+   
+     <div class="dropdown">
+      <select class="dropbtn" [(ngModel)]="menu.option">
+         <option *ngFor="let option of options" [ngValue]="option">{{option.name}}</option>
+      </select>
+     </div>
+   
+     <div class="advertisment-checkbox">
+      <label class="container">Advertisable
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+     </div>
+   
+   </div>
   <table class="table">
     <thead>
         <tr>
