@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.column.side {
+  top: 50px;
+  width: 25%;
+  height: 600px;
+}
+
+.column.middle {
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column.side,
+  .column.middle {
+    width: 100%;
+  }
+}
+
+.body {
+  font-size: 20px;
+  color: #9099a2;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.h2 {
+  color: #242d35;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.h1 {
+  color: #242d35;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.row {
+  min-height: 78vh;
+}

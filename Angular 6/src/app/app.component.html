@@ -1,6 +1,10 @@
 
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
   <router-outlet *ngIf="isRegistrationForm()"></router-outlet>
   <router-outlet *ngIf="isLoginForm()"></router-outlet>
   <router-outlet *ngIf="isForgotPassword()"></router-outlet>
@@ -13,8 +17,23 @@
       <input type="button" class="btns-on-home-page" value="SIGN IN" (click)="onSignInClicked()" />
       <input type="button" class="btns-on-home-page" value="SIGN UP" (click)="onSignUpClicked()"/>
    </div>
-    <welcome-title [title]=title></welcome-title>
-    <description [description]=description></description>
+   <welcome-title [title]=title></welcome-title>
+   <description [description]=description></description>
+   
+   <div *ngIf="isHomeRegUsr()">
+        <app-header></app-header>
+            <div *ngIf="isHomeRegUsr()">
+                <app-body></app-body>
+            </div>
+            <div *ngIf="isAboutMe()">
+                <app-about-us></app-about-us>
+            </div>
+            <div *ngIf="isMaterials()">
+                <app-materials></app-materials>
+            </div>
+        <app-footer></app-footer>
+    </div>
+
   </body>
 </html>
 

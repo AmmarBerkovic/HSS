@@ -1,0 +1,21 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="space">
+    <div class="sidebar">
+      <a (click)='bookSectionLayout()' [ngStyle]="{'background-color' : activeLayout ? '#6d7993' : '','color':activeLayout ? 'white':''}">Books</a>
+      <a (click)='videoSectionLayout()' [ngStyle]="{'background-color' : !activeLayout ? '#6d7993' : '','color': !activeLayout ? 'white' : ''}">Videos</a>
+    </div>
+  <div class="wholeForm">
+    <app-books-form *ngIf="activeLayout"></app-books-form>
+    <app-videos-form *ngIf="!activeLayout"></app-videos-form>
+  </div>
+</div>
+  
+
+</body>
+</html> 

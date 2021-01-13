@@ -24,6 +24,17 @@ import { FormNewPasswordComponent } from './user/form-new-password/form-new-pass
 import { DescriptionComponent } from './description/description.component';
 import { WelcomeTitleComponent } from './welcome-title/welcome-title.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { BodyComponent } from './body/body.component';
+import { VideosFormComponent } from './videos-form/videos-form.component';
+import { BooksFormComponent } from './books-form/books-form.component';
+import { MaterialsComponent } from './materials/materials.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import {NgxPaginationModule} from 'ngx-pagination'; // <-- import the module
+import { Ng2OrderModule } from 'ng2-order-pipe'; //importing the module
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,14 +46,24 @@ import { AppRoutingModule } from './app-routing.module';
     FormEnterCodeComponent,
     FormNewPasswordComponent,
     WelcomeTitleComponent,
-    DescriptionComponent
+    DescriptionComponent,
+    HeaderComponent,
+    FooterComponent,
+    BodyComponent,
+    AboutUsComponent,
+    MaterialsComponent,
+    BooksFormComponent,
+    VideosFormComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(appRoutes),
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    Ng2SearchPipeModule,
+    NgxPaginationModule,
+    Ng2OrderModule, // importing the sorting package here
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,
