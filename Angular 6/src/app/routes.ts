@@ -7,6 +7,9 @@ import { AuthGuard } from './auth/auth.guard';
 import { FormEnterCodeComponent } from './user/form-enter-code/form-enter-code.component';
 import { FormEnterEmailComponent } from './user/form-enter-email/form-enter-email.component';
 import { FormNewPasswordComponent } from './user/form-new-password/form-new-password.component';
+import { MaterialsComponent } from './materials/materials.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { BodyComponent } from './body/body.component';
 
 export const appRoutes: Routes = [
     {
@@ -20,7 +23,10 @@ export const appRoutes: Routes = [
     { path: 'userprofile', component: UserProfileComponent, canActivate:[AuthGuard] },
     { path: 'forgot-password', component: FormEnterEmailComponent },
     { path: 'enter-code', component: FormEnterCodeComponent },
-    { path: 'new-password', component: FormNewPasswordComponent }
+    { path: 'new-password', component: FormNewPasswordComponent },
+    { path: 'materials', component: MaterialsComponent },
+    { path: 'about', component: AboutUsComponent },
+    { path: 'home', component: BodyComponent}
 ];
 
 
