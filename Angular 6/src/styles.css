@@ -1,14 +1,14 @@
-
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-html {
-  background-color: #6d7993;
-}
 
 body {
   font-family: "Poppins", sans-serif;
   font-size: 19px;
   height: 100vh;
+  background-image: url("src/assets/background-image-books.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 a {
@@ -393,4 +393,55 @@ td.text-right {
   padding: 10px;
   margin: 10px 22px 22px ;
   color: rgb(0, 0, 0);
+}
+
+
+/* Ispod se nalazi CSS kod za pocetni Home Page. Ovaj kod i treba da bude unutar ovog fajla styles.css,
+jer je direktno vezan sa app.component.html. Ovaj dio koda NE DIRAJ */
+.home-page{
+    min-height: 100%;
+    margin: 0px;
+    background-image: url("src/assets/background-image-books.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.topnav-home-page{
+    max-width: 100%;
+    overflow: hidden;  
+    background-color: #6d7993; 
+    padding: 0px 20px; 
+}
+
+.btns-on-home-page{
+    background-color: white;
+    text-align: center;
+    float: right;
+    padding: 10px 20px;
+    margin-right : 23px;
+    margin-top : 14px;
+    width: 10%;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    color:#6d7993;
+    font-size: 25px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.btns-on-home-page:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    color: #6d7993;
+}
+
+.logo-image{
+    display: block;
+    float: left;
+    margin: auto;
+    padding-top: 10px;
+    max-width: 25%;
+    max-height: 25%;
 }

@@ -1,4 +1,20 @@
-<router-outlet *ngIf="isLoginForm()"></router-outlet>
-<router-outlet *ngIf="isForgotPassword()"></router-outlet>
-<router-outlet *ngIf="isEnterCode()"></router-outlet>
-<router-outlet *ngIf="isNewPassword()"></router-outlet> 
+
+<!DOCTYPE html>
+<html>
+  <router-outlet *ngIf="isRegistrationForm()"></router-outlet>
+  <router-outlet *ngIf="isLoginForm()"></router-outlet>
+  <router-outlet *ngIf="isForgotPassword()"></router-outlet>
+  <router-outlet *ngIf="isEnterCode()"></router-outlet>
+  <router-outlet *ngIf="isNewPassword()"></router-outlet> 
+
+  <body class="home-page" *ngIf="isHomeRoute()">
+    <div class="topnav-home-page">
+      <img class="logo-image" [src]="logoUrl">
+      <input type="button" class="btns-on-home-page" value="SIGN IN" (click)="onSignInClicked()" />
+      <input type="button" class="btns-on-home-page" value="SIGN UP" (click)="onSignUpClicked()"/>
+   </div>
+    <welcome-title [title]=title></welcome-title>
+    <description [description]=description></description>
+  </body>
+</html>
+
