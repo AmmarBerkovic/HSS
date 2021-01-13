@@ -10,14 +10,13 @@ import { FormNewPasswordComponent } from './user/form-new-password/form-new-pass
 
 export const appRoutes: Routes = [
     {
-        path: 'signup', component: UserComponent,
+        path: 'registration-form', component: UserComponent,
         children: [{ path: '', component: SignUpComponent }]
     },
     {
         path: 'login', component: UserComponent,
         children: [{ path: '', component: SignInComponent }]
     },
-    { path: '', redirectTo: '/login', pathMatch: 'full' },
     { path: 'userprofile', component: UserProfileComponent, canActivate:[AuthGuard] },
     { path: 'forgot-password', component: FormEnterEmailComponent },
     { path: 'enter-code', component: FormEnterCodeComponent },
