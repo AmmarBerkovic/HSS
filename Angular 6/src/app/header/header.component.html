@@ -4,12 +4,12 @@
  </a>
 <div class="header">
 <div class="header-left">
-  <a class="rightMargin" routerLink="" (click)='setHomeLayout()' [ngStyle]="{'background-color' : activeLayout === 1 ? 'white' : '', 'color' : activeLayout === 1 ? '#6D7993':''}">Home</a> 
-  <a class="rightMargin" routerLink="materials" (click)='setMaterialsLayout()' [ngStyle]="{'background-color' : activeLayout === 2 ? 'white' : '', 'color' : activeLayout === 2 ? '#6D7993':''}">Materials</a>
-  <a class="rightMargin" routerLink="about" (click)='setAboutUsLayout()' [ngStyle]="{'background-color' : activeLayout === 3 ? 'white' : '', 'color' : activeLayout === 3 ? '#6D7993':''}">About us</a>
+  <a class="rightMargin" routerLink="../body" (click)='setHomeLayout()' [ngStyle]="{'background-color' : activeLayout === 1 ? 'white' : '', 'color' : activeLayout === 1 ? '#6D7993':''}">Home</a> 
+  <a class="rightMargin" routerLink="../materials" (click)='setMaterialsLayout()' [ngStyle]="{'background-color' : activeLayout === 2 ? 'white' : '', 'color' : activeLayout === 2 ? '#6D7993':''}">Materials</a>
+  <a class="rightMargin" routerLink="../about" (click)='setAboutUsLayout()' [ngStyle]="{'background-color' : activeLayout === 3 ? 'white' : '', 'color' : activeLayout === 3 ? '#6D7993':''}">About us</a>
 </div>
 
 <div class="header-right">
-  <button class="button" >Log out</button>
+  <button class="button" type="submit" name="submit2" id="submit2" (click)="onLogout()" value="Log out">Log out</button>
 </div>
 </div>

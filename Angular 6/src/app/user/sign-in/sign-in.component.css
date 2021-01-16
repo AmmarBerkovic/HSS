@@ -1,4 +1,12 @@
 
+html{
+  background-image: url("src/assets/background-image-books.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100%;
+  margin: 0px;
+}
 .forgot-pw {
     color:#5cacf1;
     margin-bottom: 5%;

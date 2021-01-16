@@ -1,3 +1,12 @@
+html{
+  background-image: url("src/assets/background-image-books.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100%;
+  margin: 0px;
+}
+
 a {
     color: #5cacf1;
     display:inline-block;

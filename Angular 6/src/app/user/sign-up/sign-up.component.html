@@ -1,3 +1,4 @@
+
 <div>
   <img src="/assets/img/users.png" id="icon" alt="User Icon" />
 </div>
@@ -22,7 +23,7 @@
   <div class="container">
 
   <input class="passw" type="password" #password="ngModel" [(ngModel)]="userService.selectedUser.password" name="password" id="password"  placeholder="Password"
-  minlength="8" required [ngClass]="{'invalid-textbox' :signUpForm.submitted && !password.valid }">
+  minlength="8" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required [ngClass]="{'invalid-textbox' :signUpForm.submitted && !password.valid }">
   
   <span>
     <i class="eye"class="fa fa-eye" id="eye" onclick="toggle()"></i>
@@ -34,7 +35,7 @@
   </div>
 
  </div>
-<input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+<input type="password"  #repeatpassword="ngModel" [(ngModel)]="userService.selectedUser.repeatpassword" placeholder="Repeat Password" name="repeatpassword" id="repeatpassword" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
 title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" >
 
   <div *ngIf="signUpForm.submitted && repeatpassword.errors">

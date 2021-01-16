@@ -4,6 +4,7 @@ import { webpage } from 'src/webpage-data';
 import { Input } from '@angular/core';
 declare const toggle:any;
 declare const toggle1:any;
+declare const validatePassword:any;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -39,7 +40,12 @@ export class AppComponent {
     toggle();
   }
 
-
+  onchange(){
+    validatePassword();
+  }
+  onkeyup(){
+validatePassword();
+  }
   isHomeRoute(){
     return this.router.url === '/';
   }
@@ -61,13 +67,16 @@ export class AppComponent {
   }
 
   isHomeRegUsr(){
-    return this.router.url === '/home';
+    return this.router.url === '/body';
   }
   isAboutMe(){
     return this.router.url === '/about';
   }
   isMaterials(){
     return this.router.url === '/materials';
+  }
+  isUserProfile(){
+    return this.router.url === '/userprofile';
   }
   term?:any ;
 

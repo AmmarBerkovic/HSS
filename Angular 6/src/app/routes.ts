@@ -20,13 +20,12 @@ export const appRoutes: Routes = [
         path: 'login', component: UserComponent,
         children: [{ path: '', component: SignInComponent }]
     },
-    { path: 'userprofile', component: UserProfileComponent, canActivate:[AuthGuard] },
     { path: 'forgot-password', component: FormEnterEmailComponent },
     { path: 'enter-code', component: FormEnterCodeComponent },
     { path: 'new-password', component: FormNewPasswordComponent },
     { path: 'materials', component: MaterialsComponent },
     { path: 'about', component: AboutUsComponent },
-    { path: 'home', component: BodyComponent}
+    { path: 'body', component: BodyComponent}
 ];
 
 

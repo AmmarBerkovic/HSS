@@ -10,7 +10,9 @@
   <router-outlet *ngIf="isForgotPassword()"></router-outlet>
   <router-outlet *ngIf="isEnterCode()"></router-outlet>
   <router-outlet *ngIf="isNewPassword()"></router-outlet> 
-
+  <router-outlet *ngIf="isHomeRegUsr()"></router-outlet> 
+  <router-outlet *ngIf="isMaterials()"></router-outlet> 
+  <router-outlet *ngIf="isAboutMe()"></router-outlet>
   <body class="home-page" *ngIf="isHomeRoute()">
     <div class="topnav-home-page">
       <img class="logo-image" [src]="logoUrl">
@@ -20,20 +22,8 @@
    <welcome-title [title]=title></welcome-title>
    <description [description]=description></description>
    
-   <div *ngIf="isHomeRegUsr()">
-        <app-header></app-header>
-            <div *ngIf="isHomeRegUsr()">
-                <app-body></app-body>
-            </div>
-            <div *ngIf="isAboutMe()">
-                <app-about-us></app-about-us>
-            </div>
-            <div *ngIf="isMaterials()">
-                <app-materials></app-materials>
-            </div>
-        <app-footer></app-footer>
-    </div>
 
   </body>
 </html>
+ 
 

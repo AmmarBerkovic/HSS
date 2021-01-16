@@ -17,6 +17,11 @@ var userSchema = new mongoose.Schema({
         required: 'Password can\'t be empty',
         minlength: [8, 'Password must be atleast 8 character long']
     },
+    repeatpassword: {
+        type: String,
+        required: 'Password can\'t be empty',
+        minlength: [8, 'Password must be atleast 8 character long']
+    },
     saltSecret: String
 });
 
@@ -31,6 +36,15 @@ userSchema.pre('save', function (next) {
     bcrypt.genSalt(10, (err, salt) => {
         bcrypt.hash(this.password, salt, (err, hash) => {
             this.password = hash;
+            this.saltSecret = salt;
+            next();
+        });
+    });
+});
+userSchema.pre('save', function (next) {
+    bcrypt.genSalt(10, (err, salt) => {
+        bcrypt.hash(this.repeatpassword, salt, (err, hash) => {
+            this.repeatpassword = hash;
             this.saltSecret = salt;
             next();
         });

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../shared/user.service';
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-header',
@@ -7,14 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   activeLayout: number = 1;
-
-  constructor() { }
-
+  //router: any;
+  constructor(private userService: UserService, private router: Router) { }
   ngOnInit(): void {
   }
 
   setHomeLayout(){
-    this.activeLayout = 1;
+    this.activeLayout=1;
   }
   setMaterialsLayout(){
     this.activeLayout = 2;
@@ -22,4 +23,9 @@ export class HeaderComponent implements OnInit {
   setAboutUsLayout(){
     this.activeLayout = 3;
   }
+  onLogout(){
+    this.userService.deleteToken();
+    this.router.navigateByUrl('/login');
+  }
+
 }
