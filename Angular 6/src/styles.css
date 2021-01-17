@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
-
+.home-reg{
+    background-color: white;
+}
 
 body {
   font-family: "Poppins", sans-serif;
@@ -8,7 +10,7 @@ body {
   
 }
 html{
-  background-image: url("src/assets/background-image-books.jpg");
+    background-image: url("src/assets/background-image-books.jpg");  
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;

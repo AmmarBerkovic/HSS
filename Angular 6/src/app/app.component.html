@@ -5,14 +5,16 @@
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
-  <router-outlet *ngIf="isRegistrationForm()"></router-outlet>
-  <router-outlet *ngIf="isLoginForm()"></router-outlet>
-  <router-outlet *ngIf="isForgotPassword()"></router-outlet>
-  <router-outlet *ngIf="isEnterCode()"></router-outlet>
-  <router-outlet *ngIf="isNewPassword()"></router-outlet> 
-  <router-outlet *ngIf="isHomeRegUsr()"></router-outlet> 
-  <router-outlet *ngIf="isMaterials()"></router-outlet> 
-  <router-outlet *ngIf="isAboutMe()"></router-outlet>
+    <router-outlet *ngIf="isRegistrationForm()"></router-outlet>
+    <router-outlet *ngIf="isLoginForm()"></router-outlet>
+    <router-outlet *ngIf="isForgotPassword()"></router-outlet>
+    <router-outlet *ngIf="isEnterCode()"></router-outlet>
+    <router-outlet *ngIf="isNewPassword()"></router-outlet> 
+  <div class="home-reg">
+    <router-outlet *ngIf="isHomeRegUsr()"></router-outlet> 
+    <router-outlet *ngIf="isMaterials()"></router-outlet> 
+    <router-outlet *ngIf="isAboutMe()"></router-outlet>
+  </div>
   <body class="home-page" *ngIf="isHomeRoute()">
     <div class="topnav-home-page">
       <img class="logo-image" [src]="logoUrl">
