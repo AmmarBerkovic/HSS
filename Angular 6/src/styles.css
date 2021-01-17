@@ -15,8 +15,7 @@ html{
   min-height: 100%;
   margin: 0px;
 }
-/* Ispod se nalazi CSS kod za pocetni Home Page. Ovaj kod i treba da bude unutar ovog fajla styles.css,
-jer je direktno vezan sa app.component.html. Ovaj dio koda NE DIRAJ */
+
 .home-page{
     background-image: url("src/assets/background-image-books.jpg");
     background-position: center;

@@ -3,24 +3,32 @@
   <img src="assets/img/single_user.png" id="icon" alt="User Icon" />
 </div>
 <form #signInForm="ngForm" (ngSubmit)="signInForm.valid && onSubmit(signInForm)">
-  <input type="text" name="email" #email="ngModel" [(ngModel)]="model.email" placeholder="Email" [pattern]="emailRegex" required
+  <input type="text" name="email" #email="ngModel" [(ngModel)]="model.email" placeholder="Email" [pattern]="emailRegex"
+  title="Example: example@gmail.com" required
     [ngClass]="{'invalid-textbox' :signInForm.submitted && !email.valid }">
   <div *ngIf="signInForm.submitted && email.errors?.pattern">
     <label class="validation-message">Invalid email address.</label>
   </div>
   <div class="container">
-  <input class="passw" type="password" name="password" #password="ngModel" [(ngModel)]="model.password" id="password" placeholder="Password" required minlength="8"
+  <input class="passw" type="password" name="password" #password="ngModel" [(ngModel)]="model.password" id="password" placeholder="Password" 
+  title="Must contain at least one number and one uppercase and lowercase letter, 
+  and at least 8 or more characters" required minlength="8"
     [ngClass]="{'invalid-textbox' :signInForm.submitted && !password.valid }">
     <span>
-      <i class="eye"class="fa fa-eye" id="eye" onclick="toggle()"></i>
+      <i class="eye" class="fa fa-eye" id="eye" onclick="toggle()"></i>
     </span>
   
   <div *ngIf="signInForm.submitted && password.errors?.minlength">
     <label class="validation-message">Minimum 8 characters.</label>
+
   </div>
 </div>
-  <input type="submit" value="Sign In">
+  <input class="box" type="checkbox" id="rememberMe">
+  <label class="rmb" for="rememberMe"> Remember Me </label>
+  <br>
+  <input class="btnsign" type="submit" value="Sign In">
 </form>
+<a href="#forgot-pw" routerLink="../forgot-password" routerLinkActive="active" class="forgot-pw">Forgot Password?</a>
 <!-- Error message -->
 <div class="alert" *ngIf="serverErrorMessages">
   {{serverErrorMessages}}

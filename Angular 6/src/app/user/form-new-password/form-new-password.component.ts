@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 declare const toggle:any;
 
@@ -11,11 +12,12 @@ export class FormNewPasswordComponent implements OnInit {
   onClick(){
     toggle();
   }
-  constructor() { }
+  constructor(private router : Router) { }
 
   ngOnInit() {
   }
   changed(){
     window.alert('Password change is successfull');
+    this.router.navigateByUrl('/login');
   }
 }
