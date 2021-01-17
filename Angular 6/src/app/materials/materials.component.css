@@ -202,6 +202,7 @@ select {
   position: absolute;
   height: 70vh;
   overflow: auto;
+  height: 955px;
 }
 
 .sidebar a {
